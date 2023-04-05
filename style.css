@@ -169,7 +169,62 @@ hr {
 
 /* PORTFOLIO */
 
-#firstProject {
+#projectOne {
     display: block;
     background-color: beige;
+    margin: 2% 10% 0% 10%;
+    border: 2px solid brown;
+    overflow: auto;
+}
+
+#projectTwo {
+    display: block;
+    background-color: beige;
+    margin: 0% 10% 0% 10%;
+    border: 2px solid brown;
+    overflow: auto;
+}
+
+#projectThree {
+    display: block;
+    background-color: beige;
+    margin: 0% 10% 0% 10%;
+    border: 2px solid brown;
+    margin-bottom: 8%;
+    overflow: auto;
+}
+
+#projectOneTitle {
+    margin-left: 2.5%;
+}
+
+#projectTwoTitle {
+    margin-left: 2.5%;
+}
+
+#projectThreeTitle {
+    margin-left: 2.5%;
+}
+
+#projectOneImg {
+    width: 20%;
+    float: left;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+}
+
+#projectTwoImg {
+    width: 20%;
+    float: right;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+}
+
+#projectThreeImg {
+    width: 20%;
+    float: left;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+}
+
+.textPortfolio {
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    text-align: justify;
 }
