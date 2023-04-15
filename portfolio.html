@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="javascript.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -13,9 +13,10 @@
     <header class="fixedHeader">
         <h1 id="name">Rodrigo Souza  
             <div id="linkBox">                        
-                <a id="pageLinkSpacer" href="index.html">Home</a>
+                <a class="pageLink" href="index.html">Home</a>
                 <a class="pageLink" id="linkTwo" href="about.html">About</a>
                 <a class="pageLink" id="linkThree" href="portfolio.html">Portfolio</a>
+                <a class="pageLink" id="linkFour" href="contact.html">Contact</a>
             </div>  
         </h1>
         
@@ -27,10 +28,10 @@
 
         <hr/>
 
-        <div id="projectOne"></p>
-            <h3 id="projectOneTitle">First Project</h3>
-            <hr/>
-            <img id="projectOneImg" src="https://images.freeimages.com/images/previews/ee1/random-colours-1141005.jpg"/>
+        <div class="project"></p>
+            <h3 class="projectTitle">First Project</h3>
+            <hr class="portfolioBox"/>
+            <img class="projectImg one" src="https://images.freeimages.com/images/previews/ee1/random-colours-1141005.jpg"/>
             
             <p class="textPortfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
@@ -44,10 +45,10 @@
         <br></br>
         
         
-        <div id="projectTwo">
-            <h3 id="projectTwoTitle">Second Project</h3>
-            <hr/>
-            <img id="projectTwoImg" src="https://storage.googleapis.com/pod_public/1300/88149.jpg"/>
+        <div class="project">
+            <h3 class="projectTitle">Second Project</h3>
+            <hr class="portfolioBox"/>
+            <img class="projectImg two" src="https://storage.googleapis.com/pod_public/1300/88149.jpg"/>
             
             <p class="textPortfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
@@ -62,10 +63,10 @@
 
         
 
-        <div id="projectThree">
-            <h3 id="projectThreeTitle">Third Project</h3>
-            <hr/>
-            <img id="projectThreeImg" src="https://www.pacegallery.com/media/images/16_9-2.width-2000.png"/>
+        <div class="project">
+            <h3 class="projectTitle">Third Project</h3>
+            <hr class="portfolioBox"/>
+            <img class="projectImg three" src="https://www.pacegallery.com/media/images/16_9-2.width-2000.png"/>
             
             <p class="textPortfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
@@ -74,14 +75,19 @@
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
         </div>
+
+        <br>
+        <br>
+        <br>
 
     </div>
 
     <footer> 
-        <a href="https://www.facebook.com" onclick="return confirmation()"><img id="facebook" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/2048px-Facebook_icon_2013.svg.png"></a>
-        <a href="https://www.twitter.com" onclick="return confirmation()"><img id="twitter" src="https://e7.pngegg.com/pngimages/723/34/png-clipart-college-of-charleston-logo-computer-icons-free-high-quality-twitter-icon-tweeter-logo-blue-computer-wallpaper.png"></a>
-        <a href="https://www.linkedIn.com" onclick="return confirmation()"><img id="linkedIn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"></a>
-</footer>
-
+        <div></div>
+        <div></div>
+        <a href="https://www.facebook.com" onclick="return confirmation()"><img class="personalPageLink" src="https://vigilant-lumiere-2756fa.netlify.app/images/facebook.svg"></a>
+        <a href="https://www.twitter.com" onclick="return confirmation()"><img class="personalPageLink" src="https://vigilant-lumiere-2756fa.netlify.app/images/twitter.svg"></a>
+        <a href="https://www.linkedIn.com" onclick="return confirmation()"><img class="personalPageLink" src="https://vigilant-lumiere-2756fa.netlify.app/images/linkedin.svg"></a>
+    </footer>
 </body>
 </html>

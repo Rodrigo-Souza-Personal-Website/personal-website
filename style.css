@@ -3,29 +3,19 @@ html {
 }
 
 .mainSiteBox {
+    display: flex;
+    flex-direction: column;
     width: 70%;
     height: 100%;
     margin: 0 auto;
     background-color: #1A5F7A;
     min-height: 95vh;
-    overflow: auto;
 }
 
-h1 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-/* HOME */
-
-#name {
-    margin-left: 2%;
-}
-
-#backgroundBlock {
+hr { 
     display: block;
-    background-position: 0%;
-    background-color: blueviolet;
-    overflow: auto;
+    border: 0.1vh inset;
+    width: 65vw;
 }
 
 header {
@@ -39,27 +29,44 @@ header {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 45vw auto 60px 60px 60px auto 45vw;
     position: fixed;
     bottom: 0;
     width: 100%;
     color: white;
     background-color: brown;
-    display: block;
     height: 50px;
-    margin-top: 5% white;
+    align-content: space-around;
+}
+
+.personalPageLink {
+    width: 40px;
+    margin-top: 0.5vh;
+}
+
+.introDescription{
+    margin-top: 3%;
+    text-align: left;
+    margin-left: 3%;
+}
+
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+
+/* HOME */
+
+#name {
+    margin-left: 2%;
 }
 
 #linkBox {
     display: inline;
     float: right;
     margin-right: 3%;
-}
-
-#pageLinkSpacer {
-    display: inline;
-    color:white;
-    scroll-margin-right: 20%;
-    text-decoration: none;
 }
 
 .pageLink {
@@ -69,7 +76,6 @@ footer {
 }
 
 #inspirationalQuote {
-    /* color: rgb(28, 44, 101); */
     color: beige;
     font-family: 'Courier New', Courier, monospace;
     font-size: 200%;
@@ -77,154 +83,100 @@ footer {
     font-style: italic;
 }
 
-.introDescription{
-    margin-top: 3%;
-    text-align: left;
-    margin-left: 1%;
-}
-
 #introText {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: left;
-    margin-left: 1%;
-}
-
-#facebook {
-    width: 40px;
-    margin-left:45%;
-    margin-top: 0.4%;
-}
-
-#twitter {
-    width: 40px;
-}
-
-#linkedIn {
-    width: 40px;
+    margin-left: 3%;
 }
 
 /* ABOUT */
-hr { 
-    display: block;
-    margin-end: auto;
-    margin-start: auto;
-    border: 1px inset;
-    overflow: hidden;
-    margin-before: 0.5em;
-    margin-after: 0.5em;
-}
+
 #aboutPageText {
     background-color: #1A5F7A;
 }
 
-#activityOneTitle {
-    margin-left: 2.5%;
+.activityTitle {
+    text-align: center;
 }
 
-#activityOne {
+.activity {
     text-align: justify;
-    margin-left: 1%;
-    margin-right: 2%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     padding: 2%;
+    padding-top: none;
     font-size: large;
 }
 
-#basketballImg {
+
+.image {
     width: 25%;
-    float: left;
-    margin: 0 2.5% 2.5% 2.5%;
 }
 
-#cyclingImg {
-    width: 25%;
+.image.basketball {
+    float: left;
+    margin-right: 2%;
+}
+
+.image.cycling {
     float: right;
-    margin: 0 2.5% 2.5% 2.5%;
+    margin-left: 2%;
 }
 
-#activityTwo {
-    text-align: justify;
-    margin-left: 5%;
-    margin-right: 1%;
-    font-size: large;
-}
-
-#activityThreeTitle {
-    margin-left: 2.5%;
-}
-
-#activityThree {
-    text-align: justify;
-    margin-left: 1%;
-    margin-right: 2%;
-    padding: 2%;
-    margin-bottom: 10%;
-    font-size: large;
-}
-
-#hikingImg {
-    width: 25%;
+.image.hiking {
     float: left;
-    margin: 0 2.5% 2.5% 2.5%;
+    margin-right: 2%;
 }
 
 /* PORTFOLIO */
 
-#projectOne {
+.project {
     display: block;
-    background-color: beige;
-    margin: 2% 10% 0% 10%;
+    background-color: grey;
+    margin: 0% 5% 0% 5%;
     border: 2px solid brown;
-    overflow: auto;
 }
 
-#projectTwo {
-    display: block;
-    background-color: beige;
-    margin: 0% 10% 0% 10%;
-    border: 2px solid brown;
-    overflow: auto;
-}
-
-#projectThree {
-    display: block;
-    background-color: beige;
-    margin: 0% 10% 0% 10%;
-    border: 2px solid brown;
-    margin-bottom: 8%;
-    overflow: auto;
-}
-
-#projectOneTitle {
+.projectTitle {
     margin-left: 2.5%;
 }
 
-#projectTwoTitle {
-    margin-left: 2.5%;
-}
-
-#projectThreeTitle {
-    margin-left: 2.5%;
-}
-
-#projectOneImg {
+.projectImg {
     width: 20%;
-    float: left;
-    margin: 2.5% 2.5% 2.5% 2.5%;
+    margin: 2.5%;
 }
 
-#projectTwoImg {
-    width: 20%;
+.projectImg.one, .projectImg.three {
     float: right;
-    margin: 2.5% 2.5% 2.5% 2.5%;
 }
 
-#projectThreeImg {
-    width: 20%;
+.projectImg.two {
     float: left;
-    margin: 2.5% 2.5% 2.5% 2.5%;
 }
 
 .textPortfolio {
-    margin: 2.5% 2.5% 2.5% 2.5%;
+    margin: 2.5%;
     text-align: justify;
 }
+
+.portfolioBox { 
+    border: solid 0.1vw black;
+    color: black;
+    width: 60vw;
+}
+
+/* CONTACT */
+
+.formOutline {
+    display: flex;
+    flex-direction: column;
+    max-width: 20vw;
+    align-items: center;
+    min-width: 69vw;
+}
+
+#contactPageTopText {
+    text-align: center;
+}
+
+
